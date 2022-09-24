@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet"href="style.css">
+</head>
+<body>
+    <!--Home Section-->
+ <section id="home">
+    <video muted autoplay loop plays-inline class="backvideo">
+        <source src="video.mp4" type="video/mp4">
+    </video>
+    <h2 class="logo"><span>Ola</span>mide</h2>
+    <div class="first-text">
+        <h3>Hi there, my name is</h3>
+        <h1 class="h">Ade-Olunusi<span class="ola"> Olamide</span></h1>
+        <h2 class="the">I'm a Web Developer</h2>
+     <div class="information">
+    <form>
+        <input type="email"name="email"id="mail"placeholder="Enter Your Email">
+        <input type="submit"name="submit"value="Contact Me">
+    </form>
+    </div>
+    </div>
+ </section>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about-me">ABOUT ME</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#contact-me">CONTACT ME</a></li>
+                <li><a href="#feedback">FEEDBACK</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+    <div id="menuBtn">
+        <img src="menu.png" id="menu">
+    </div>
+
+<!--About me-->
+<section id="about-me">
+    <div class="main">
+        <div class="about-text">
+            <img src="u.jpg"width="450px">
+            <h1 class="fi">About <span>Me</span></h1>
+            <h5>Web Developer</h5>
+            <i class="fa fa-twitter"></i>
+            <small>@llamidee</small>
+           <i class="fa fa-instagram"></i>
+           <small>@de_lamide</small>
+            <p>I am currently a student at The University of Lagos studying Biomedical Engineering.
+                I am a Frontend web developer. I make web pages more interactive, fun and easy to use.
+               I provide clean and perfectly designed webpages. I also create a responsive design
+               which makes the website accessible to you regardless of the size of your device. </p>
+               <button type="button">Let's Connect</button>
+        </div>
+    </div>
+</section>
+
+
+<!--services-->
+<section id="services">
+    <h1 class="p">My <span class="spa">Services</span></h1>
+    <div class="service-row">
+        <div class="service-col">
+           <div class="child1">
+                <img src="laptop.svg"
+            alt=""class="my-image">
+            <h3 class="f">Web Development</h3>
+            <p>I design webpages using HTML, CSS and Javascript
+                <br>I make webpages more interesting and accessible to use 
+                <br>to the user regardless of their devices
+            </p>
+        </div>
+        <div class="service-col">
+           <div class="child2">
+            <img src="columns-gap.svg"alt=""class="my-image">
+            <h3 class="f">Friendly Designs</h3>
+            <p>I create simply, friendly and easy to interact designs</p>
+        </div>
+    </div> 
+</section>
+
+<!--Contact-->
+<section id="contact-me">
+    <h1 class="fi">Contact<span> Me</span></h1>
+    <a href="mailto:olamidekehinde705@gmail.com?subject=subject text"><img src="envelope.svg"
+        alt=""class="my-image1">&nbsp; &nbsp;Click here to send an Email</a><i class="fa fa-paper-plane"></i>
+     <p>Lagos, Nigeria<img src="geo-alt.svg"
+        alt=""class="my-image1"></p>
+   <a href="tel:09028587222"><img src="telephone-outbound.svg"
+    alt=""class="my-image1">&nbsp; &nbsp; Click here to call me</a>
+
+    <div class="social-links">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-youtube"></i>
+           </div>
+</section>
+
+<!--Feedback-->
+<section id="feedback">
+    <h1 class="p">Feed<span class="spa">back</span></h1>
+    <div class="list-text">
+        <center>
+    <form
+    action="mailto:olamidekehinde705@gmail.com"
+    method="POST"
+    enctype="text/plain"
+    name="EmailForm">
+    <input type="text"placeholder="Your Name"/><br><br>
+    <input type="text"placeholder="Your Email"/><br><br>
+    <textarea name="Description"id=""cols="35"rows="15"placeholder="Your Message"></textarea><br>
+        <input type="submit" value="Send">
+        </form>
+</center>
+</div>
+</section>
+
+    
+<center><h2>@Copyright Olamide</h2></centre>
+    
+
+
+
+    <script>
+        var menuBtn= document.getElementById("menuBtn")
+        var sideNav= document.getElementById("sideNav")
+        var menu= document.getElementById("menu")
+    
+        sideNav.style.right = "-250px"
+    
+        menuBtn.onclick= function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+                menu.src="close.png";
+            }
+            else{
+                sideNav.style.right = "-250px";
+                menu.src="menu.png";
+            }
+        }
+    
+        var scroll = new SmoothScroll('a[href*="#"]',{
+            speed:1000,
+            speedAsDuration:true
+        })
+    </script>
+</body>
+</html>
